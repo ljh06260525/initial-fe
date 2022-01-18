@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+:root {
+    --main-color: #9D48FF;
+    --main-color-dark: #23004D;
+    --main-color-light: #A49EAC;
+    --main-color-lighten: #F2F2F2;
+    --main-font: "Noto Sans KR", sans-serif;
+    --h1-font-size: 1.5rem;
+    --normal-font-size: .923rem;
+    --small-font-size: .813rem;
+}
+
+*, ::before, ::after{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: var(--main-font);
+    font-size : var(--normal-font-size);
+    color : var(--main-color-dark);
+}
+
+h1 {
+    margin: 0;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.none{
+    display: none;
+}
+
+.block{
+    display: block;
+}
+
+
+.sign {
+    display: grid;
+    grid-template-columns: 100%;
+    height: 100vh;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.sign-content {
+    display: grid;
+}
+
+.sign-img {
+    justify-self: center;
+}
+
+.sign-img img {
+    width: 310px;
+    margin-top: 1.5rem;
+}
+
+.sign-form{
+    position: relative;
+    height: 368px;
+}
+
+.sign-form-signin, .sign-form-signup{
+    position: absolute;
+    bottom : 1rem;
+    width: 100%;
+    background-color: var(--main-color-lighten);
+    padding : 2rem 1rem;
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(35, 0, 77, .2);
+    animation-duration: .4s;
+    animation-name: animate-login;
+}
+
+@keyframes animate-login {
+    0%{
+        transform: scale(1, 1);
+    }
+
+    50%{
+        transform: scale(1.1, 1.1);
+    }
+
+    100%{
+        transform: scale(1, 1);
+    }
+}
+
+.sign-title{
+    font-size: var(--h1-font-size);
+    margin-bottom: 2rem;
+}
+
+.sign-box{
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    column-gap : .5rem;
+    padding : 1.125rem 1rem;
+    background-color: white;
+    margin-top: 1rem;
+    border-radius: .5rem;
+}
+
+.sign-icon{
+    font-size: 1.5rem;
+    color : var(--main-color);
+}
+
+.sign-input{
+    border: none;
+    outline: none;
+    font-size: var(--normal-font-size);
+    font-weight: 700;
+    color : var(--main-color-light);
+}
+
+.sign-input::placeholder{
+    font-size: var(--normal-font-size);
+    font-family: var(--main-font);
+    color : var(--main-color-light);
+}
+
+.sign-forgot{
+    display: block;
+    width: max-content;
+    margin-left: auto;
+    margin-top: .5rem;
+    font-size: var(--small-font-size);
+    font-weight: 600;
+    color: var(--main-color-light);
+}
+
+.sign-button {
+    display: block;
+    padding : 1rem;
+    margin : 2rem 0;
+    background-color: var(--main-color);
+    color : white;
+    font-weight: 600;
+    text-align: center;
+    border-radius: .5rem;
+    transition : .3s;
+}
+
+.sign-button:hover{
+    background-color: var(--main-color-dark);
+}
+
+.sign-account, .sign-signin, .sign-signup {
+    font-weight: 600;
+    font-size: var(--small-font-size);
+}
+
+.sign-account{
+    color : var(--main-color-dark);
+}
+
+.sign-signin, .sign-signup {
+    color : var(--main-color);
+    cursor:pointer;
+}
+
+.sign-social {
+    margin-top: 2rem;
+}
+
+.sign-social-icon {
+    font-size : 1.5rem;
+    color: var(--main-color-dark);
+    margin:0 1.5rem;
+}
+
+@media screen and (min-width : 576px){
+    .sign-form{
+        width:348px;
+        justify-self: center;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    :root {
+        --normal-font-size: 1rem;
+        --small-font-size: .875rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .sign {
+        height: 100vh;
+        overflow: hidden;
+    }
+    .sign-content {
+        grid-template-columns: repeat(2, max-content);
+        justify-content: center;
+        align-items: center;
+        margin-left: 10rem;
+    }
+
+    .sign-img {
+        display : flex;
+        width : 600px;
+        height: 588px;
+        background-color: var(--main-color-lighten);
+        border-radius: 1rem;
+        padding-left: 1rem;
+    }
+
+    .sign-img img{
+        width: 390px;
+        margin-top: 0;
+    }
+
+    .sign-form-signin, .sign-form-signup {
+        left: -11rem;
+    }
+
+    .sign-form-signin {
+        bottom: -1rem;
+    }
+
+    .sign-form-signup {
+        bottom: -5.5rem;
+    }
+}

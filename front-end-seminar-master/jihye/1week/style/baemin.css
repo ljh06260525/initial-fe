@@ -1,0 +1,84 @@
+body{
+    background-color: rgb(94, 190, 187);
+    width: 1750px;
+    height: auto;
+    text-align: left;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.title{
+    font-family: 'DXNPeriod-KSCpc-EUC-H';
+    font-size: 50px;
+    color: rgb(0, 0, 0); 
+    font-weight: 500px;
+    padding-top: 50px;
+    padding-left: 100px;
+}
+.logo{
+    margin: 0px 200px 50px 0px;
+    padding:0px;
+}
+.logo-img{
+    width: 40px;
+    height: 40px;
+    float: right;
+    margin-right: 30px;
+}
+
+.main{
+    background-color: rgb(94, 190, 187);
+    width: 1750px;
+    height: auto;
+    margin-right: 0px;
+    margin-bottom: 150px;
+}
+
+.text-left{
+    font-family: 'DXNPeriod-KSCpc-EUC-H';
+    font-size: 100px;
+    color: rgb(255, 255, 255);
+    font-weight: 500px;
+    text-align: left;
+    padding-left: 100px;
+    margin-bottom: 100px;
+}
+.text-right{
+    font-family: 'DXNPeriod-KSCpc-EUC-H';
+    font-size: 100px;
+    color: rgb(255, 255, 255);
+    font-weight: 500px;
+    text-align: right;
+    padding-right: 100px;
+}
+
+.rider{
+    text-align: right;
+    margin-right: 200px;
+}
+
+.right{
+    text-align: right;
+    padding: 0px;
+    margin: -200px 50px 100px 0px;
+}
+.left{
+    text-align: left;
+    padding: 0px;
+    margin: -200px 150px 0px 100px;
+}
+.content{
+    font-family: 'DXNPeriod-KSCpc-EUC-H';
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    font-weight: 500px;
+    background-image: url("../data/staek.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    width: 1800px;
+    height: 1500px;
+    float: left;
+    padding-top: 30px;
+    padding-left: 50px;
+}

@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <title>WiSoft.io Sign Page</title>
+</head>
+<body>
+<div class="sign">
+    <div class="sign-content">
+        <div class="sign-img">
+            <img src="asset/image/sign.svg" alt="가입 이미지">
+        </div>
+        <div class="sign-form">
+            <form action=""class = "sign-form-signin block" id="sign-signin">
+                <h1 class="sign-title">Sign In</h1>
+                <div class="sign-box">
+                    <i class ="bx bx-user sign-icon"></i>
+                    <input type = "text" placeholder="Username" class="sign-input">
+                </div>
+                <div class="sign-box">
+                    <i class ="bx bx-lock sign-icon"></i>
+                    <input type = "password" placeholder="Password" class="sign-input">
+                </div>
+                <a href="#" class="sign-forgot">비밀번호를 분실하셨습니까?</a>
+                <a href ="#" class ="sign-button">Sign In</a>
+
+                <div>
+                    <span class="sign-account">아직 계정이 없으시면...</span>
+                    <span class="sign-signin" id="sign-up">Sign Up</span>
+                </div>
+            </form>
+
+            <<from action="" class="sign-form-signup none" id="sign-signup">
+                <h1 class="sign-title"> Sign up</h1>
+                <div class="sign-box">
+                    <i class ="bx bx-user sign-icon"></i>
+                    <input type = "text" placeholder="User" class="sign-input">
+                </div>
+                <div class="sign-box">
+                    <i class ="bx bx-paper-plane sign-icon"></i>
+                    <input type = "password" placeholder="Email" class="sign-input">
+                </div>
+                <div class="sign-box">
+                    <i class ="bx bx-lock sign-icon"></i>
+                    <input type = "password" placeholder="Password" class="sign-input">
+                </div>
+                <a href="#" class="sign-button">Sign up</a>
+
+                <div>
+                    <span class="sign-account">아직 계정이 있으면...</span>
+                    <span class="sign-signup" id="sign-in">Sign In</span>
+                </div>
+
+                <div class="sign-social">
+                    <a href="#" class="sign-social-icon">
+                        <i class="bx bxl-facebook"></i>
+                    </a>
+                    <a href="#" class="sign-social-icon">
+                        <i class="bx bxl-google"></i>
+                    </a>
+                    <a href="#" class="sign-social-icon">
+                        <i class="bx bxl-twitter"></i>
+                    </a>
+                </div>
+            </from>
+        </div>
+    </div>
+</div>
+<script src="asset/js/sign.js"></script>
+</body>
+</html>
